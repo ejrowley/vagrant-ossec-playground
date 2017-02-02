@@ -1,0 +1,3 @@
+---
+ossec_server_ip: 10.1.0.1
+ossec_server_name: ossec-master

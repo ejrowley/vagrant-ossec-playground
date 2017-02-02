@@ -1,0 +1,10 @@
+---
+ - hosts: ossec-master
+   roles:
+    - role: dj-wasabi.ossec-server
+ - hosts: ossec-agents
+   roles:
+    - role: dj-wasabi.ossec-agent
+   hosts: gateways
+   roles:
+    - role: gateway
