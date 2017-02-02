@@ -1,2 +1,3 @@
 ---
- - debug: "TODO configure gateways"
+ - debug:
+    msg: "TODO configure gateways"
