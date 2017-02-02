@@ -1,10 +1,17 @@
 ---
+ - hosts: all
+   become: true
+   roles:
+    - role: common
  - hosts: ossec-master
+   become: true
    roles:
     - role: dj-wasabi.ossec-server
  - hosts: ossec-agents
+   become: true
    roles:
     - role: dj-wasabi.ossec-agent
-   hosts: gateways
+ - hosts: gateway-*
+   become: true
    roles:
     - role: gateway
