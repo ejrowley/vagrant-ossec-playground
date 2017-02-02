@@ -1,0 +1,4 @@
+---
+- src: dj-wasabi.ossec-server
+- src: dj-wasabi.ossec-agent
+...
